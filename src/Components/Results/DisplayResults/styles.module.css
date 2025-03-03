@@ -1,0 +1,48 @@
+.container{
+    position: relative;
+}
+
+.results_payments{
+    width: 100%;
+    color: var(--color-lime, #D8DB2F);
+    font-family: var(--font);
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 70px */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+}
+
+.popup{
+    position: absolute;
+    padding: 20px;
+    inset: 0;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    font-family: var(--font);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 70px */
+}
+
+
+@media(max-width: 1000px){
+    .results_payments{
+        width: 60vw;
+        transition: all 0.2s linear, width 0s;
+    }
+}
+
+@media(max-width: 530px){
+    .results_payments{
+        font-size: 2.5rem;
+    }
+}
